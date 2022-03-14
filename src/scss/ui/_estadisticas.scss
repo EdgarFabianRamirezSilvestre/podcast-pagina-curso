@@ -1,0 +1,6 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.estadisticas{
+    @include m.h2Border(v.$secundario, v.$primario);
+}

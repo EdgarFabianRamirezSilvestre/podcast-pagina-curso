@@ -1,0 +1,17 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.crear-grid{
+    @include m.tablet{
+        @include m.grid(2,2rem);
+        align-items: center;
+    }
+}
+.contenido{
+    text-align: center;
+    @include m.tablet{
+        text-align: left;
+    }
+    @include m.h2Border(v.$secundario, v.$primario);
+}
+
